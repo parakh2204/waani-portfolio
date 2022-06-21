@@ -1,6 +1,7 @@
 <script setup>
 import profileImg from '../assets/img/profile-img.jpg';
 import WD1 from '../assets/img/portfolio/WD/WD-1.jpg';
+import WD2 from '../assets/img/portfolio/WD/WD-2.jpg';
 import Img3D_1 from '../assets/img/portfolio/3D/3D-1.jpg';
 import Img3D_2 from '../assets/img/portfolio/3D/3D-2.jpg';
 import Img3D_3 from '../assets/img/portfolio/3D/3D-3.jpg';
@@ -429,7 +430,16 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <div class="portfolio-links">
                 <a :href="WD1" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD2" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a :href="WD2" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
