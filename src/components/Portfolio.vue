@@ -52,9 +52,11 @@ import profileImg from '../assets/img/profile-img.jpg';
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
+          <div class="content">
+            <h3 style="font-size: 22px;">Architect</h3>
+          </div>
+          <p>I am a Licensed Architect having experience in planning, Rendering, 3D Models, Interiors,
+            Working drawings, Floor 3D plans etc.</p>
         </div>
 
         <div class="row">
@@ -62,19 +64,19 @@ import profileImg from '../assets/img/profile-img.jpg';
             <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <h3>Architect</h3>
-            <p class="fst-italic">
+            <!-- <p class="fst-italic">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
               dolore
               magna aliqua.
-            </p>
+            </p> -->
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 January 1997</span></li>
+                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 January 1997</span></li> -->
                   <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-8552855631</span></li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Ujjain(M.P.)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chaumahla(Raj.)</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
               <div class="col-lg-6">
@@ -83,16 +85,9 @@ import profileImg from '../assets/img/profile-img.jpg';
                   <li><i class="bi bi-chevron-right"></i> <strong>Degree:</strong> <span>B.Arch.</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>waanim121@gmail.com</span>
                   </li>
-                  <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
                 </ul>
               </div>
             </div>
-            <p>
-              Officiis eligendi itaque labore et dolorum mollitia officiis optio vero. Quisquam sunt adipisci omnis et
-              ut. Nulla accusantium dolor incidunt officia tempore. Et eius omnis.
-              Cupiditate ut dicta maxime officiis quidem quia. Sed et consectetur qui quia repellendus itaque neque.
-              Aliquid amet quidem ut quaerat cupiditate. Ab et eum qui repellendus omnis culpa magni laudantium dolores.
-            </p>
           </div>
         </div>
 
@@ -151,7 +146,8 @@ import profileImg from '../assets/img/profile-img.jpg';
         </div>
 
       </div>
-    </section> --><!-- End Facts Section -->
+    </section> -->
+    <!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
     <section id="skills" class="skills section-bg">
@@ -213,6 +209,22 @@ import profileImg from '../assets/img/profile-img.jpg';
               <span class="skill">MS Office <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Hand drafting <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Physical Model Making <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -300,7 +312,8 @@ import profileImg from '../assets/img/profile-img.jpg';
         </div>
 
       </div>
-    </section> --><!-- End Resume Section -->
+    </section> -->
+    <!-- End Resume Section -->
 
     <!-- ======= Portfolio Section ======= -->
     <section id="portfolio" class="portfolio section-bg">
@@ -481,7 +494,8 @@ import profileImg from '../assets/img/profile-img.jpg';
         </div>
 
       </div>
-    </section> --><!-- End Services Section -->
+    </section> -->
+    <!-- End Services Section -->
 
     <!-- ======= Testimonials Section ======= -->
     <!-- <section id="testimonials" class="testimonials section-bg">
@@ -572,7 +586,8 @@ import profileImg from '../assets/img/profile-img.jpg';
         </div>
 
       </div>
-    </section> --><!-- End Testimonials Section -->
+    </section> -->
+    <!-- End Testimonials Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
@@ -580,7 +595,7 @@ import profileImg from '../assets/img/profile-img.jpg';
 
         <div class="section-title">
           <h2>Contact</h2>
-         <!--  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+          <!--  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
             in iste officiis commodi quidem hic quas.</p> -->
         </div>
@@ -592,19 +607,19 @@ import profileImg from '../assets/img/profile-img.jpg';
               <div class="address">
                 <i class="bi bi-geo-alt"></i>
                 <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
+                <p>Near Bilawali Road, Chaumahla(Raj.)</p>
               </div>
 
               <div class="email">
                 <i class="bi bi-envelope"></i>
                 <h4>Email:</h4>
-                <p>info@example.com</p>
+                <p>waanim121@gmail.com</p>
               </div>
 
               <div class="phone">
                 <i class="bi bi-phone"></i>
                 <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
+                <p>+91 8552855631</p>
               </div>
 
               <iframe
@@ -660,7 +675,8 @@ import profileImg from '../assets/img/profile-img.jpg';
         Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
-  </footer> --><!-- End  Footer -->
+  </footer> -->
+  <!-- End  Footer -->
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
