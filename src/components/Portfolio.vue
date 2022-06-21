@@ -185,6 +185,14 @@ import profileImg from '../assets/img/profile-img.jpg';
               </div>
             </div>
 
+            <div class="progress">
+              <span class="skill">Hand drafting <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                </div>
+              </div>
+            </div>
+
           </div>
 
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
@@ -209,14 +217,6 @@ import profileImg from '../assets/img/profile-img.jpg';
               <span class="skill">MS Office <i class="val">85%</i></span>
               <div class="progress-bar-wrap">
                 <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">
-                </div>
-              </div>
-            </div>
-
-            <div class="progress">
-              <span class="skill">Hand drafting <i class="val">100%</i></span>
-              <div class="progress-bar-wrap">
-                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
                 </div>
               </div>
             </div>
@@ -330,9 +330,9 @@ import profileImg from '../assets/img/profile-img.jpg';
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">App</li>
-              <li data-filter=".filter-card">Card</li>
-              <li data-filter=".filter-web">Web</li>
+              <li data-filter=".filter-app">3D</li>
+              <li data-filter=".filter-card">2D</li>
+              <li data-filter=".filter-web" v-tooltip="'Working Drawing'">WD</li>
             </ul>
           </div>
         </div>
