@@ -1,5 +1,6 @@
 <script setup>
 import profileImg from '../assets/img/profile-img.jpg';
+import WD1 from '../assets/img/portfolio/WD/WD-1.jpg';
 </script>
 
 <template>
@@ -352,9 +353,9 @@ import profileImg from '../assets/img/profile-img.jpg';
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/WD/WD-1.jpg" class="img-fluid" alt="">
+              <img :src="WD1" class="img-fluid" alt="">
               <div class="portfolio-links">
-                <a href="../src/assets/img/portfolio/WD/WD-1.jpg" data-gallery="portfolioGallery"
+                <a :href="WD1" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
                 <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
               </div>
