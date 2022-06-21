@@ -1,10 +1,9 @@
 <script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from '@/components/HelloWorld.vue'
+import Portfolio from '@/components/Portfolio.vue'
 </script>
 
 <template>
-  <HelloWorld msg="You did it!" />
+  <Portfolio/>
 </template>
 
 <style>
