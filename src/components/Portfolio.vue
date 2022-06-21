@@ -351,8 +351,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_1" class="img-fluid" alt="Img3D_1">
               <div class="portfolio-links">
                 <a :href="Img3D_1" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -362,8 +362,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_2" class="img-fluid" alt="Img3D_2">
               <div class="portfolio-links">
                 <a :href="Img3D_2" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -373,8 +373,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_3" class="img-fluid" alt="Img3D_3">
               <div class="portfolio-links">
                 <a :href="Img3D_3" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -384,8 +384,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_4" class="img-fluid" alt="Img3D_4">
               <div class="portfolio-links">
                 <a :href="Img3D_4" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -395,8 +395,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_5" class="img-fluid" alt="Img3D_5">
               <div class="portfolio-links">
                 <a :href="Img3D_5" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -406,8 +406,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_6" class="img-fluid" alt="Img3D_6">
               <div class="portfolio-links">
                 <a :href="Img3D_6" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -417,8 +417,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="Img3D_7" class="img-fluid" alt="Img3D_7">
               <div class="portfolio-links">
                 <a :href="Img3D_7" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="App 1" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -428,18 +428,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img :src="WD1" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a :href="WD1" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/WD/WD-2.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../src/assets/img/portfolio/WD/WD-2.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="Web 3" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -449,36 +439,11 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               <img src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
               <div class="portfolio-links">
                 <a href="../assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 2"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
+                  class="portfolio-lightbox" title="Card 2" style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-7.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 1"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-8.jpg" class="img-fluid" alt="">
-              <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" title="Card 3"><i class="bx bx-plus"></i></a>
-                <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a>
-              </div>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section><!-- End Portfolio Section -->
 
