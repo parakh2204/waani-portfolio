@@ -48,7 +48,7 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
   <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
     <div class="hero-container" data-aos="fade-in">
       <h1>Waani Maheshwari</h1>
-      <p>I'm <span class="typed" data-typed-items="Designer, Developer, Freelancer, Photographer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="Architect, Freelancer, "></span></p>
     </div>
   </section><!-- End Hero -->
 
