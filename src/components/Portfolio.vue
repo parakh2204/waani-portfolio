@@ -80,8 +80,6 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
             <div class="row">
               <div class="col-lg-6">
                 <ul>
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Birthday:</strong> <span>21 January 1997</span></li> -->
-                  <!-- <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span>www.example.com</span></li> -->
                   <li><i class="bi bi-chevron-right"></i> <strong>Phone:</strong> <span>+91-8552855631</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>City:</strong> <span>Chaumahla(Raj.)</span></li>
                   <li><i class="bi bi-chevron-right"></i> <strong>Freelance:</strong> <span>Available</span></li>
@@ -605,14 +603,9 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-
         <div class="section-title">
           <h2>Contact</h2>
-          <!--  <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p> -->
         </div>
-
         <div class="row" data-aos="fade-in">
 
           <div class="col-lg-5 d-flex align-items-stretch">
