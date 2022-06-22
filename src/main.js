@@ -4,7 +4,6 @@ import router from './router'
 import tooltip from "./directives/tooltip.js";
 import "./assets/css/tooltip.css";
 const app = createApp(App)
-localStorage.clear()
 app.use(router)
 app.directive("tooltip", tooltip);
 

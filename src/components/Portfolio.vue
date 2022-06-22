@@ -22,26 +22,28 @@ import TwoD4 from '../assets/img/portfolio/2D/2d-4.jpg';
 
 </script>
 <script>
-
 export default {
   name: "Portfolio",
   data() {
-    return {
-      //cars: [],
-      car: "All",
-    };
+    filterValue: 'All'
   },
   methods: {
     setFilterValue(value) {
       console.log('========value=======',value)
       //this.car = value
       localStorage.setItem('filterValue',value)
+      this.$forceUpdate();
     }
   },
+  beforeMount() {
+    this.filterValue = 'All'
+    console.log('=======beforeMount=========')
+  },
+  beforeUpdate() {
+    this.filterValue = localStorage.filterValue
+    console.log('=======beforeUpdate=========')
+  }
 };
-
-
-console.log('========localStorage.filterValue=======',localStorage.filterValue)
 
 </script>
 
@@ -361,7 +363,7 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio</h2>
+          <h2>Portfolio ==={{filterValue}}</h2>
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
             in iste officiis commodi quidem hic quas.</p>
@@ -385,7 +387,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -396,7 +397,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -407,7 +407,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_3" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -418,7 +417,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_4" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -429,7 +427,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_5" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -440,7 +437,6 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_6" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
@@ -451,19 +447,19 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               <div class="portfolio-links">
                 <a :href="Img3D_7" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
-                <!-- <a href="portfolio-details.html" title="More Details"><i class="bx bx-link"></i></a> -->
               </div>
             </div>
           </div>
 
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2>Structural Working Drawing</h2>
+          <!-- Structural Working Drawing Code -->
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 class="custom_H2">Structural Working Drawing</h2>
           </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
           </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
           </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
@@ -484,8 +480,8 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap" style="visibility:hidden;">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <div class="portfolio-wrap" style="visibility: hidden;">
               <img :src="WD2" class="img-fluid" alt="WD2">
               <div class="portfolio-links">
                 <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
@@ -494,15 +490,15 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
             </div>
           </div>
 
-
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2>Interior Working Drawing</h2>
+          <!-- Interior Working Drawing Code -->
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 class="custom_H2">Interior Working Drawing</h2>
           </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Interior Working Drawing</h2>
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
           </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Interior Working Drawing</h2>
+          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+            <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
           </div>
 
 
