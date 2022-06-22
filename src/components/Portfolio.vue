@@ -15,6 +15,10 @@ import interiorWD3 from '../assets/img/portfolio/WD/interior/iwd-4.jpg';
 import interiorWD4 from '../assets/img/portfolio/WD/interior/iwd-3.jpg';
 import interiorWD5 from '../assets/img/portfolio/WD/interior/iwd-2.jpg';
 import interiorWD6 from '../assets/img/portfolio/WD/interior/iwd-1.jpg';
+import TwoD1 from '../assets/img/portfolio/2D/2d-1.jpg';
+import TwoD2 from '../assets/img/portfolio/2D/2d-2.jpg';
+import TwoD3 from '../assets/img/portfolio/2D/2d-3.jpg';
+import TwoD4 from '../assets/img/portfolio/2D/2d-4.jpg';
 
 </script>
 <script>
@@ -557,15 +561,45 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
             </div>
           </div>
 
+          <!-- 2D image filter code -->
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
-              <img src="../assets/img/portfolio/portfolio-4.jpg" class="img-fluid" alt="">
+              <img :src="TwoD1" class="img-fluid" alt="TwoD1">
               <div class="portfolio-links">
-                <a href="../assets/img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery"
+                <a :href="TwoD1" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img :src="TwoD2" class="img-fluid" alt="TwoD2">
+              <div class="portfolio-links">
+                <a :href="TwoD2" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img :src="TwoD3" class="img-fluid" alt="TwoD3">
+              <div class="portfolio-links">
+                <a :href="TwoD3" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img :src="TwoD4" class="img-fluid" alt="TwoD4">
+              <div class="portfolio-links">
+                <a :href="TwoD4" data-gallery="portfolioGallery"
+                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section><!-- End Portfolio Section -->
