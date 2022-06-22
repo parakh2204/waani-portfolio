@@ -80,7 +80,7 @@ export default {
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Some Skills</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Technical Skills</span></a></li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
               <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -205,7 +205,7 @@ export default {
       <div class="container">
 
         <div class="section-title">
-          <h2>Some Skills</h2>
+          <h2>Technical Skills</h2>
         </div>
 
         <div class="row skills-content">
