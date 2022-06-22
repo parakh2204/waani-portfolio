@@ -9,6 +9,30 @@ import Img3D_4 from '../assets/img/portfolio/3D/3D-4.jpg';
 import Img3D_5 from '../assets/img/portfolio/3D/3D-5.jpg';
 import Img3D_6 from '../assets/img/portfolio/3D/3D-6.jpg';
 import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
+
+</script>
+<script>
+
+export default {
+  name: "Portfolio",
+  data() {
+    return {
+      //cars: [],
+      car: "All",
+    };
+  },
+  methods: {
+    setFilterValue(value) {
+      console.log('========value=======',value)
+      //this.car = value
+      localStorage.setItem('filterValue',value)
+    }
+  },
+};
+
+
+console.log('========localStorage.filterValue=======',localStorage.filterValue)
+
 </script>
 
 <template>
@@ -27,7 +51,8 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
           <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
           <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
           <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-          <a :href='"https://www.linkedin.com/in/waani-maheshwari/"' target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a :href='"https://www.linkedin.com/in/waani-maheshwari/"' target="_blank" class="linkedin"><i
+              class="bx bxl-linkedin"></i></a>
         </div>
       </div>
 
@@ -335,10 +360,10 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
         <div class="row" data-aos="fade-up">
           <div class="col-lg-12 d-flex justify-content-center">
             <ul id="portfolio-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-app">3D</li>
-              <li data-filter=".filter-card">2D</li>
-              <li data-filter=".filter-web" v-tooltip="'Working Drawing'">WD</li>
+              <li data-filter="*" class="filter-active" @click="setFilterValue('All')">All</li>
+              <li data-filter=".filter-app" @click="setFilterValue('filter-app')">3D</li>
+              <li data-filter=".filter-card" @click="setFilterValue('filter-card')">2D</li>
+              <li data-filter=".filter-web" v-tooltip="'Working Drawing'" @click="setFilterValue('filter-web')">WD</li>
             </ul>
           </div>
         </div>
@@ -420,26 +445,85 @@ import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
               </div>
             </div>
           </div>
-
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2>Interior Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Interior Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Interior Working Drawing</h2>
+          </div>
+          
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img :src="WD1" class="img-fluid" alt="">
+              <img :src="WD1" class="img-fluid" alt="WD1">
               <div class="portfolio-links">
                 <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
-
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img :src="WD2" class="img-fluid" alt="">
+              <img :src="WD2" class="img-fluid" alt="WD2">
               <div class="portfolio-links">
                 <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD2" class="img-fluid" alt="WD2">
+              <div class="portfolio-links">
+                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2>Structural Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          </div>
+
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD1" class="img-fluid" alt="WD1">
+              <div class="portfolio-links">
+                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD1" class="img-fluid" alt="WD1">
+              <div class="portfolio-links">
+                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" style="display: none;">
+              <img :src="WD2" class="img-fluid" alt="WD2">
+              <div class="portfolio-links">
+                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- <div class="col-lg-12 portfolio-item filter-web">
+            <h2>Structural Working Drawing</h2>
+          </div> -->
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
