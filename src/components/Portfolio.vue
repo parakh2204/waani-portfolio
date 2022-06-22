@@ -25,23 +25,26 @@ import TwoD4 from '../assets/img/portfolio/2D/2d-4.jpg';
 export default {
   name: "Portfolio",
   data() {
-    filterValue: 'All'
+    return {
+      filterValue: 'All',
+      isMobile: false
+    }
   },
   methods: {
     setFilterValue(value) {
-      console.log('========value=======',value)
-      //this.car = value
       localStorage.setItem('filterValue',value)
       this.$forceUpdate();
     }
   },
   beforeMount() {
     this.filterValue = 'All'
+    this.isMobile = window.innerWidth > 600 ? false : true
     console.log('=======beforeMount=========')
   },
   beforeUpdate() {
     this.filterValue = localStorage.filterValue
-    console.log('=======beforeUpdate=========')
+    this.isMobile = window.innerWidth > 600 ? false : true
+    console.log('=======beforeUpdate=========',window.innerWidth)
   }
 };
 
@@ -363,7 +366,8 @@ export default {
       <div class="container">
 
         <div class="section-title">
-          <h2>Portfolio ==={{filterValue}}</h2>
+          <h2>Portfolio</h2>
+          <!-- ==={{filterValue}}=========={{isMobile}} -->
           <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
             consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
             in iste officiis commodi quidem hic quas.</p>
@@ -452,15 +456,23 @@ export default {
           </div>
 
           <!-- Structural Working Drawing Code -->
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 class="custom_H2">Structural Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
-          </div>
+          <template v-if="!isMobile">
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 class="custom_H2">Structural Working Drawing</h2>
+            </div>
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
+            </div>
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 style="visibility: hidden" class="custom_H2">Structural Working Drawing</h2>
+            </div>
+          </template>
+
+          <template v-if="isMobile">
+            <div class="col-lg-12 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 class="custom_H2">Structural Working Drawing</h2>
+            </div>
+          </template>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
@@ -480,52 +492,61 @@ export default {
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <div class="portfolio-wrap" style="visibility: hidden;">
-              <img :src="WD2" class="img-fluid" alt="WD2">
-              <div class="portfolio-links">
-                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+          <template v-if="!isMobile">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <div class="portfolio-wrap" style="visibility: hidden;">
+                <img :src="WD2" class="img-fluid" alt="WD2">
+                <div class="portfolio-links">
+                  <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                      class="bx bx-plus"></i></a>
+                </div>
               </div>
             </div>
-          </div>
+          </template>
 
           <!-- Interior Working Drawing Code -->
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 class="custom_H2">Interior Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
-            <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
-          </div>
+          <template v-if="!isMobile">
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 class="custom_H2">Interior Working Drawing</h2>
+            </div>
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
+            </div>
+            <div class="col-lg-4 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 style="visibility: hidden;" class="custom_H2">Interior Working Drawing</h2>
+            </div>
+          </template>
 
+          <template v-if="isMobile">
+            <div class="col-lg-12 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <h2 class="custom_H2">Interior Working Drawing</h2>
+            </div>
+          </template>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img :src="interiorWD6" class="img-fluid" alt="interiorWD6">
               <div class="portfolio-links">
-                <a :href="interiorWD6" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD6" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
-           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img :src="interiorWD1" class="img-fluid" alt="interiorWD1">
               <div class="portfolio-links">
-                <a :href="interiorWD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD1" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
-           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
               <img :src="interiorWD2" class="img-fluid" alt="interiorWD2">
               <div class="portfolio-links">
-                <a :href="interiorWD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD2" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -533,8 +554,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="interiorWD3" class="img-fluid" alt="interiorWD3">
               <div class="portfolio-links">
-                <a :href="interiorWD3" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD3" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -542,8 +563,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="interiorWD4" class="img-fluid" alt="interiorWD4">
               <div class="portfolio-links">
-                <a :href="interiorWD4" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD4" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -551,8 +572,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="interiorWD5" class="img-fluid" alt="interiorWD5">
               <div class="portfolio-links">
-                <a :href="interiorWD5" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
+                <a :href="interiorWD5" data-gallery="portfolioGallery" class="portfolio-lightbox"
+                  style="width: 100%;"><i class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -562,8 +583,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="TwoD1" class="img-fluid" alt="TwoD1">
               <div class="portfolio-links">
-                <a :href="TwoD1" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <a :href="TwoD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -571,8 +592,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="TwoD2" class="img-fluid" alt="TwoD2">
               <div class="portfolio-links">
-                <a :href="TwoD2" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <a :href="TwoD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -580,8 +601,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="TwoD3" class="img-fluid" alt="TwoD3">
               <div class="portfolio-links">
-                <a :href="TwoD3" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <a :href="TwoD3" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
@@ -589,8 +610,8 @@ export default {
             <div class="portfolio-wrap">
               <img :src="TwoD4" class="img-fluid" alt="TwoD4">
               <div class="portfolio-links">
-                <a :href="TwoD4" data-gallery="portfolioGallery"
-                  class="portfolio-lightbox" style="width: 100%;"><i class="bx bx-plus"></i></a>
+                <a :href="TwoD4" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
