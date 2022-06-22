@@ -1,7 +1,7 @@
 <script setup>
 import profileImg from '../assets/img/profile-img.jpg';
-import WD1 from '../assets/img/portfolio/WD/WD-1.jpg';
-import WD2 from '../assets/img/portfolio/WD/WD-2.jpg';
+import WD1 from '../assets/img/portfolio/WD/structural/WD-1.jpg';
+import WD2 from '../assets/img/portfolio/WD/structural/WD-2.jpg';
 import Img3D_1 from '../assets/img/portfolio/3D/3D-1.jpg';
 import Img3D_2 from '../assets/img/portfolio/3D/3D-2.jpg';
 import Img3D_3 from '../assets/img/portfolio/3D/3D-3.jpg';
@@ -9,6 +9,12 @@ import Img3D_4 from '../assets/img/portfolio/3D/3D-4.jpg';
 import Img3D_5 from '../assets/img/portfolio/3D/3D-5.jpg';
 import Img3D_6 from '../assets/img/portfolio/3D/3D-6.jpg';
 import Img3D_7 from '../assets/img/portfolio/3D/3D-7.jpg';
+import interiorWD1 from '../assets/img/portfolio/WD/interior/iwd-6.jpg';
+import interiorWD2 from '../assets/img/portfolio/WD/interior/iwd-5.jpg';
+import interiorWD3 from '../assets/img/portfolio/WD/interior/iwd-4.jpg';
+import interiorWD4 from '../assets/img/portfolio/WD/interior/iwd-3.jpg';
+import interiorWD5 from '../assets/img/portfolio/WD/interior/iwd-2.jpg';
+import interiorWD6 from '../assets/img/portfolio/WD/interior/iwd-1.jpg';
 
 </script>
 <script>
@@ -445,6 +451,46 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
               </div>
             </div>
           </div>
+
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2>Structural Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          </div>
+          <div class="col-lg-4 portfolio-item filter-web">
+            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD1" class="img-fluid" alt="WD1">
+              <div class="portfolio-links">
+                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD2" class="img-fluid" alt="WD2">
+              <div class="portfolio-links">
+                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap" style="visibility:hidden;">
+              <img :src="WD2" class="img-fluid" alt="WD2">
+              <div class="portfolio-links">
+                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+
           <div class="col-lg-4 portfolio-item filter-web">
             <h2>Interior Working Drawing</h2>
           </div>
@@ -454,76 +500,62 @@ console.log('========localStorage.filterValue=======',localStorage.filterValue)
           <div class="col-lg-4 portfolio-item filter-web">
             <h2 style="visibility: hidden;">Interior Working Drawing</h2>
           </div>
-          
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img :src="WD1" class="img-fluid" alt="WD1">
-              <div class="portfolio-links">
-                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img :src="WD2" class="img-fluid" alt="WD2">
-              <div class="portfolio-links">
-                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap">
-              <img :src="WD2" class="img-fluid" alt="WD2">
-              <div class="portfolio-links">
-                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
-                    class="bx bx-plus"></i></a>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2>Structural Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
-          </div>
-          <div class="col-lg-4 portfolio-item filter-web">
-            <h2 style="visibility: hidden;">Structural Working Drawing</h2>
-          </div>
 
-           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img :src="WD1" class="img-fluid" alt="WD1">
+              <img :src="interiorWD6" class="img-fluid" alt="interiorWD6">
               <div class="portfolio-links">
-                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                <a :href="interiorWD6" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
            <div class="col-lg-4 col-md-6 portfolio-item filter-web">
             <div class="portfolio-wrap">
-              <img :src="WD1" class="img-fluid" alt="WD1">
+              <img :src="interiorWD1" class="img-fluid" alt="interiorWD1">
               <div class="portfolio-links">
-                <a :href="WD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                <a :href="interiorWD1" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="interiorWD2" class="img-fluid" alt="interiorWD2">
+              <div class="portfolio-links">
+                <a :href="interiorWD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
           <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-wrap" style="display: none;">
-              <img :src="WD2" class="img-fluid" alt="WD2">
+            <div class="portfolio-wrap">
+              <img :src="interiorWD3" class="img-fluid" alt="interiorWD3">
               <div class="portfolio-links">
-                <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                <a :href="interiorWD3" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
                     class="bx bx-plus"></i></a>
               </div>
             </div>
           </div>
-
-          <!-- <div class="col-lg-12 portfolio-item filter-web">
-            <h2>Structural Working Drawing</h2>
-          </div> -->
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="interiorWD4" class="img-fluid" alt="interiorWD4">
+              <div class="portfolio-links">
+                <a :href="interiorWD4" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="interiorWD5" class="img-fluid" alt="interiorWD5">
+              <div class="portfolio-links">
+                <a :href="interiorWD5" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
 
           <div class="col-lg-4 col-md-6 portfolio-item filter-card">
             <div class="portfolio-wrap">
