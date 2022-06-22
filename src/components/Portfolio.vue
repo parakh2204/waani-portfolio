@@ -1,7 +1,12 @@
 <script setup>
 import profileImg from '../assets/img/profile-img.jpg';
-import WD1 from '../assets/img/portfolio/WD/structural/WD-1.jpg';
-import WD2 from '../assets/img/portfolio/WD/structural/WD-2.jpg';
+import WD1 from '../assets/img/portfolio/WD/structural/WD1.jpg';
+import WD2 from '../assets/img/portfolio/WD/structural/WD2.jpg';
+import WD3 from '../assets/img/portfolio/WD/structural/WD3.jpg';
+import WD4 from '../assets/img/portfolio/WD/structural/WD4.jpg';
+import WD5 from '../assets/img/portfolio/WD/structural/WD5.jpg';
+import WD6 from '../assets/img/portfolio/WD/structural/WD6.jpg';
+import WD7 from '../assets/img/portfolio/WD/structural/WD7.jpg';
 import Img3D_1 from '../assets/img/portfolio/3D/3D-1.jpg';
 import Img3D_2 from '../assets/img/portfolio/3D/3D-2.jpg';
 import Img3D_3 from '../assets/img/portfolio/3D/3D-3.jpg';
@@ -492,7 +497,62 @@ export default {
               </div>
             </div>
           </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD3" class="img-fluid" alt="WD3">
+              <div class="portfolio-links">
+                <a :href="WD3" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD4" class="img-fluid" alt="WD4">
+              <div class="portfolio-links">
+                <a :href="WD4" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD5" class="img-fluid" alt="WD5">
+              <div class="portfolio-links">
+                <a :href="WD5" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD6" class="img-fluid" alt="WD6">
+              <div class="portfolio-links">
+                <a :href="WD6" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img :src="WD7" class="img-fluid" alt="WD7">
+              <div class="portfolio-links">
+                <a :href="WD7" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                    class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
           <template v-if="!isMobile">
+            <div class="col-lg-4 col-md-6 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
+              <div class="portfolio-wrap" style="visibility: hidden;">
+                <img :src="WD2" class="img-fluid" alt="WD2">
+                <div class="portfolio-links">
+                  <a :href="WD2" data-gallery="portfolioGallery" class="portfolio-lightbox" style="width: 100%;"><i
+                      class="bx bx-plus"></i></a>
+                </div>
+              </div>
+            </div>
             <div class="col-lg-4 col-md-6 portfolio-item filter-web" v-show="filterValue === 'filter-web'">
               <div class="portfolio-wrap" style="visibility: hidden;">
                 <img :src="WD2" class="img-fluid" alt="WD2">
