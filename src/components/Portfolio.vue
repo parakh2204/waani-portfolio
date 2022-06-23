@@ -80,7 +80,8 @@ export default {
         <ul>
           <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Technical Skills</span></a></li>
+          <li><a href="#skills" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Technical Skills</span></a>
+          </li>
           <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i>
               <span>Portfolio</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
@@ -373,9 +374,6 @@ export default {
         <div class="section-title">
           <h2>Portfolio</h2>
           <!-- ==={{filterValue}}=========={{isMobile}} -->
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit
-            in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row" data-aos="fade-up">
@@ -854,9 +852,9 @@ export default {
                 <h4>Call:</h4>
                 <p>+91 8552855631</p>
               </div>
-
+              <div id="map"></div>
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.563442096402!2d75.5971256!3d23.9405082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39645b8ccc517843%3A0xc534020c2feda34a!2sBilawali%20Rd%2C%20Chaumahla%2C%20Rajasthan%20326515!5e0!3m2!1sen!2sin!4v1655960483932!5m2!1sen!2sin"
                 frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
 

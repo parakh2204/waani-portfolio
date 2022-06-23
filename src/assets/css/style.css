@@ -911,6 +911,9 @@ section {
   color: #0e2442;
   content: "/";
 }
+.portfolio .custom_H2 {
+  font-size: 1.75rem;
+}
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
     display: block !important;
