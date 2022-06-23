@@ -115,7 +115,7 @@ export default {
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="">
+            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="profile-img" style="width:350px;height:250px;">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <!-- <p class="fst-italic">
