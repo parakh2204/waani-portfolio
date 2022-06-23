@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6 {
   width: 100%;
   height: 100vh;
   background: url("../img/hero-bg.jpg") top center;
-  background-size: cover;
+  background-size: 1200px 800px;
 }
 #hero:before {
   content: "";
@@ -215,6 +215,8 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   z-index: 2;
   min-width: 300px;
+  top: 280px;
+  left: 400px;
 }
 #hero h1 {
   margin: 0 0 10px 0;
