@@ -253,13 +253,13 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 30px;
   }
   #hero .hero-container { 
-    top: 375px;
+    top: 325px;
     left: 40px;  
   }
   #hero {
     background: url("../img/hero-bg.jpg") top left;
     background-size: 700px 100vh;
-    height: 915px;
+    height: 92.5vh;
   }
 }
 @media (max-width: 376px) {
