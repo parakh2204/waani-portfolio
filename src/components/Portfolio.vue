@@ -115,7 +115,8 @@ export default {
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="profile-img" style="width:350px;height:250px;">
+            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="profile-img"
+              style="width:350px;height:250px;">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
             <!-- <p class="fst-italic">
@@ -861,7 +862,10 @@ export default {
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <iframe
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdIWL5yaQos-q6FCbSQ0UxYUszY1P4hM33DXfds6A8roSFRSg/viewform?embedded=true"
+              width="640" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
                   <label for="name">Name</label>
@@ -896,7 +900,7 @@ export default {
                 <div class="sent-message">Your message has been sent. Thank you!</div>
               </div>
               <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+            </form> -->
           </div>
 
         </div>
