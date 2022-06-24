@@ -44,12 +44,10 @@ export default {
   beforeMount() {
     this.filterValue = 'All'
     this.isMobile = window.innerWidth > 600 ? false : true
-    console.log('=======beforeMount=========')
   },
   beforeUpdate() {
     this.filterValue = localStorage.filterValue
     this.isMobile = window.innerWidth > 600 ? false : true
-    console.log('=======beforeUpdate=========',window.innerWidth)
   }
 };
 
@@ -67,10 +65,10 @@ export default {
         <img :src="profileImg" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Waani Maheshwari</a></h1>
         <div class="social-links mt-3 text-center">
-          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-          <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-          <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
+          <a href="https://www.facebook.com/waani.maheshwari.5" target="_blank" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.instagram.com/waanim121/" target="_blank" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://wa.me/918552855631" target="_blank" class="google-plus"><i class='bx bxl-whatsapp'></i></a>
           <a :href='"https://www.linkedin.com/in/waani-maheshwari/"' target="_blank" class="linkedin"><i
               class="bx bxl-linkedin"></i></a>
         </div>
