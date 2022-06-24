@@ -99,7 +99,7 @@ export default {
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" style="padding-bottom:30px;">
       <div class="container">
 
         <div class="section-title">
@@ -108,7 +108,7 @@ export default {
             <h3 style="font-size: 22px;">Architect</h3>
           </div>
           <p>I am a Licensed Architect having experience in planning, Rendering, 3D Models, Interiors,
-            Working drawings, isometric 3D plan etc.</p>
+            Working drawings, Isometric 3D plan etc.</p>
         </div>
 
         <div class="row">
