@@ -110,7 +110,7 @@ export default {
             <h3 style="font-size: 22px;">Architect</h3>
           </div>
           <p>I am a Licensed Architect having experience in planning, Rendering, 3D Models, Interiors,
-            Working drawings, Floor 3D plans etc.</p>
+            Working drawings, isometric 3D plan etc.</p>
         </div>
 
         <div class="row">
