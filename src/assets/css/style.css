@@ -259,7 +259,7 @@ h1, h2, h3, h4, h5, h6 {
   #hero {
     background: url("../img/hero-bg.jpg") top left;
     background-size: 700px 100vh;
-    height: 92.5vh;
+    height: 92.75vh;
   }
 }
 @media (max-width: 376px) {
