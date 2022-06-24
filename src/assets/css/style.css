@@ -930,6 +930,7 @@ section {
 }
 .portfolio .custom_H2 {
   font-size: 1.75rem;
+  font-family: sans-serif;
 }
 @media (max-width: 768px) {
   .breadcrumbs .d-flex {
