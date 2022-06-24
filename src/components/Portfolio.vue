@@ -864,12 +864,22 @@ export default {
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
+                  <label for="name">Name</label>
                   <input type="text" name="name" class="form-control" id="name" required>
                 </div>
                 <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
+                  <label for="name">Email</label>
                   <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Contact Number</label>
+                  <input type="tel" pattern="[6789][0-9]{9}" name="contact_no" class="form-control" id="contact_no" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">City</label>
+                  <input type="text" class="form-control" name="city" id="city" required>
                 </div>
               </div>
               <div class="form-group">
