@@ -858,49 +858,12 @@ export default {
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3646.563442096402!2d75.5971256!3d23.9405082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39645b8ccc517843%3A0xc534020c2feda34a!2sBilawali%20Rd%2C%20Chaumahla%2C%20Rajasthan%20326515!5e0!3m2!1sen!2sin!4v1655960483932!5m2!1sen!2sin"
                 frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
             </div>
-
           </div>
 
           <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSdIWL5yaQos-q6FCbSQ0UxYUszY1P4hM33DXfds6A8roSFRSg/viewform?embedded=true"
               width="640" height="1250" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-            <!-- <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Contact Number</label>
-                  <input type="tel" pattern="[6789][0-9]{9}" name="contact_no" class="form-control" id="contact_no" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">City</label>
-                  <input type="text" class="form-control" name="city" id="city" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form> -->
           </div>
 
         </div>
