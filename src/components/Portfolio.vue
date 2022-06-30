@@ -1,5 +1,4 @@
 <script setup>
-import profileImg from '../assets/img/profile-img.jpg';
 import WD2 from '../assets/img/portfolio/WD/structural/WD2.jpg';
 
 </script>
@@ -18,7 +17,10 @@ export default {
       boxSizeCount3D:0,
       boxSizeCount2D:0,
       boxSizeCountStructuralWD:0,
-      boxSizeCountInternalWD:0
+      boxSizeCountInternalWD:0,
+      coverImgUrl: '',
+      profileImgUrl:'',
+      aboutMeText:''
     }
   },
   methods: {
@@ -39,7 +41,7 @@ export default {
         const response = await fetch(fetchUrl, fetchOptions).then(response =>
           response.json()
         );
-        return response.includes.Asset;
+        return response;
       } catch (error) {
         console.log(error);
       }
@@ -47,11 +49,14 @@ export default {
   },
    async created() {
     let response = await this.getImages();
-    this.threeDImages = response.filter(obj => obj.fields.title === '3D')
-    this.twoDImages = response.filter(obj => obj.fields.title === '2D')
-    this.structuralWD = response.filter(obj => obj.fields.title === 'structural_wd')
-    this.interiorWD = response.filter(obj => obj.fields.title === 'interior_wd')
+    let imgResponse = response.includes.Asset;
 
+    this.threeDImages = imgResponse.filter(obj => obj.fields.title === '3D')
+    this.twoDImages = imgResponse.filter(obj => obj.fields.title === '2D')
+    this.structuralWD = imgResponse.filter(obj => obj.fields.title === 'structural_wd')
+    this.interiorWD = imgResponse.filter(obj => obj.fields.title === 'interior_wd')
+    this.profileImgUrl = imgResponse.filter(obj => obj.fields.title === 'profile-img')
+    this.aboutMeText = response.items[0].fields.aboutUsText
     this.boxSizeCount3D = this.threeDImages.length % 3 === 0 ? 0 :this.threeDImages.length % 3 === 1? 2: 1;
     this.boxSizeCount2D = this.twoDImages.length % 3 === 0 ? 0 :this.twoDImages.length % 3 === 1? 2: 1;
     this.boxSizeCountStructuralWD = this.structuralWD.length % 3 === 0 ? 0 :this.structuralWD.length % 3 === 1? 2: 1;
@@ -78,7 +83,7 @@ export default {
     <div class="d-flex flex-column">
 
       <div class="profile">
-        <img :src="profileImg" alt="" class="img-fluid rounded-circle">
+        <img :src="profileImgUrl[0] ? profileImgUrl[0].fields.file.url:''" alt="" class="img-fluid rounded-circle">
         <h1 class="text-light"><a href="index.html">Waani Maheshwari</a></h1>
         <div class="social-links mt-3 text-center">
           <!-- <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a> -->
@@ -125,21 +130,15 @@ export default {
           <div class="content">
             <h3 style="font-size: 22px;">Architect</h3>
           </div>
-          <p>I am a Licensed Architect having experience in planning, Rendering, 3D Models, Interiors,
-            Working drawings, Isometric 3D plan etc.</p>
+          <p>{{aboutMeText?aboutMeText:''}}</p>
         </div>
 
         <div class="row">
           <div class="col-lg-4" data-aos="fade-right">
-            <img src="../assets/img/profile-img.jpg" class="img-fluid" alt="profile-img"
+            <img :src="profileImgUrl[0] ? profileImgUrl[0].fields.file.url:''" class="img-fluid" alt="profile-img"
               style="width:350px;height:250px;">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
-            <!-- <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-              dolore
-              magna aliqua.
-            </p> -->
             <div class="row">
               <div class="col-lg-6">
                 <ul>
